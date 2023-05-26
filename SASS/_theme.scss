@@ -1,0 +1,22 @@
+:root{
+    --theme-bg: hsl(0, 0%, 100%);
+    --theme-clr: hsl(0, 0%, 2%);
+    --theme-clr-accent: hsl(274, 82%, 60%);
+    --theme-toggle-clr: hsl(0, 0%, 100%);
+    --theme-toggle-focus: hsl(274, 82%, 60%);
+    --theme-toggle-label: hsl(0, 0%, 46%);
+    --theme-search-bg: hsl(0, 0%, 96%);
+    --theme-select-border: hsl(0, 0%, 81%);
+    --theme-select-arrow: hsl(274, 82%, 60%);
+    --theme-select-focus: hsl(274, 82%, 60%);
+    --theme-select-popup: hsl(0, 0%, 100%);
+    --theme-select-shadow: 0px 5px 30px hsl(0 0% 0% / 10%);
+    --theme-synonym-label: hsl(0, 0%, 46%);
+}
+
+[data-theme="dark"]{
+    --theme-bg: hsl(0, 0%, 0%);
+    --theme-clr: hsl(0, 0%, 100%);
+    --theme-search-bg: hsl(0, 0%, 12%);
+    --theme-toggle-clr: hsl(0, 0%, 12%);
+}

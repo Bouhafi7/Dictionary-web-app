@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800&family=Inter:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    font-family: Inter;
+}
+
+@mixin max-sm{
+    @media (max-width:781px){
+        @content;
+    }
+}
+@mixin max-md{
+    @media (max-width:991px){
+        @content;
+    }
+}
+@mixin max-lg{
+    @media (max-width:1191px){
+        @content;
+    }
+}
+@mixin max-xl{
+    @media (max-width:1500px){
+        @content;
+    }
+}
+
+@mixin sm{
+    @media (min-width:781px){
+        @content;
+    }
+}
+@mixin md{
+    @media (min-width:991px){
+        @content;
+    }
+}
+@mixin lg{
+    @media (min-width:1191px){
+        @content;
+    }
+}
+@mixin xl{
+    @media (min-width:1500px){
+        @content;
+    }
+}
+
+@mixin container{
+    .container{
+        padding: 20px;
+        margin: auto;
+    }
+}
+@include container;
+
+.container {
+    padding-top: 50px;
+    @include sm{
+        max-width: 800px;
+    }
+    
+    @include xl{
+        width: 800px;
+    }
+}
+
+@mixin centering{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
